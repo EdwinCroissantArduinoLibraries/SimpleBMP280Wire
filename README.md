@@ -1,4 +1,4 @@
-#SimpleBMP180 library
+#SimpleBMP180Wire library
 
 This is a bare bone BMP280 Library
 
