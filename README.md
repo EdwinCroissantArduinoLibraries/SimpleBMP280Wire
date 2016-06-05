@@ -1,6 +1,6 @@
 #SimpleBMP180 library
 
-This is bare bone BMP280 Library
+This is a bare bone BMP280 Library
 The library uses 32 bit fixed point calculations.
 The sensor is set at the ultra low power setting and a 1 second refresh rate.
 
