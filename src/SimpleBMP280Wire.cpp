@@ -47,7 +47,7 @@ boolean SimpleBMP280Wire::begin() {
 
 	/* read calibration data */
 	retrieveData(calData, 24);
-	for (int i = 0; i < 24; ++i) {
+	for (int i = 0; i < 24; i++) {
 		_calData.calArray[i] = Wire.read();
 	}
 
