@@ -6,15 +6,15 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-SimpleBMP280Wire		KEYWORD1
+SimpleBMP280Wire	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-begin					KEYWORD2
-getPressure				KEYWORD2
-getLastTemperature		KEYWORD2
+begin	KEYWORD2
+getPressure	KEYWORD2
+getLastTemperature	KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
