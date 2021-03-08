@@ -68,17 +68,19 @@ int32_t SimpleBMP280Wire::getPressure(void) {
 	union {
 		int32_t int32;
 		struct {
-			uint8_t XLSB, LSB, MSB;
+			uint8_t LLSB, LSB, MSB, MMSB;
 		};
 	} UT, UP; //uncompensated temperature and uncompensated pressure
 
 	retrieveData(data, 6);
+	UP.MMSB = 0;
 	UP.MSB = Wire.read();
 	UP.LSB = Wire.read();
-	UP.XLSB = Wire.read();
+	UP.LLSB = Wire.read();
+	UT.MMSB = 0;
 	UT.MSB = Wire.read();
 	UT.LSB = Wire.read();
-	UT.XLSB = Wire.read();
+	UT.LLSB = Wire.read();
 
 	UT.int32 >>= 4;
 	UP.int32 >>= 4;
